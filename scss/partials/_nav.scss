@@ -1,0 +1,38 @@
+.logo{
+    max-width: 100%;
+    color: $primary-color !important;
+}
+.navbar-brand{
+  margin: 0;
+  color: $primary-color !important;
+
+}
+
+// .navbar{
+//   padding-bottom: 0;
+// }
+.navbar-nav{
+  display: flex;
+    margin: 0 !important;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 1.5em;
+}
+.nav-item{
+  padding: 0 .2em;
+  margin: 0 .5em;
+  > a{
+    color: $primary-color !important;
+  }
+  &:hover, &.active, .nav-link-active{
+    border-bottom: $primary-color 2px solid;
+  }
+}
+
+@media (min-width:877px){
+  .nav-v2{
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 0;
+    }
+}
