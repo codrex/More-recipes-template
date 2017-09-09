@@ -14,6 +14,18 @@ body{
 .display-4{
   font-size:2em
 }
+.page-link{
+  color:$primary-color;
+  &:focus, &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+    background-color: lighten($secondary-color,41%);
+    border-color: lighten($secondary-color,41%)
+  }
+}
+.page-item{
+  background:$primary-color;
+}
 a,a:focus,a:hover,a:active{
     color: $dark-text ;
     text-decoration: none;

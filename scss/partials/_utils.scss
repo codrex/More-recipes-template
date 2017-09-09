@@ -9,11 +9,16 @@
 }
 .bg-primary{
   background-color: $primary-color!important;
-  &:hover,&:focus{
+  &:hover,&:focus,a.bg-primary:hover{
       background-color: darken($primary-color,5%)!important;
       outline: 0;
       box-shadow: none;
   }
+}
+a.bg-primary:hover{
+  background-color: darken($primary-color,5%)!important;
+  outline: 0;
+  box-shadow: none;
 }
 .m-2em-b {
     margin-bottom: .3rem!important; 
@@ -53,6 +58,9 @@
 .s-padding{
   padding-left: .5em!important;
   padding-right: .5em!important;
+}
+.l-margin{
+  margin-left: 1em!important;
 }
 .f-wrap{
   flex-wrap: wrap !important;
